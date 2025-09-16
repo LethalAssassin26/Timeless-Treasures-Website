@@ -27,7 +27,7 @@ const HeroSection = () => {
               <Button
                 variant="outline"
                 size="lg"
-                className="border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary px-8 py-3 font-semibold"
+                className="bg-card text-foreground hover:bg-secondary px-8 py-3 font-semibold shadow-lg"
                 onClick={() => setLocation("/contact")}
                 data-testid="button-get-started"
               >
