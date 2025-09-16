@@ -17,9 +17,9 @@ const Products = () => {
 
   const categories = [
     { id: "all", label: "All Products" },
-    { id: "software", label: "Software" },
-    { id: "hardware", label: "Hardware" },
-    { id: "services", label: "Services" },
+    { id: "wood", label: "Wood Products" },
+    { id: "printed", label: "3D Printed" },
+    { id: "plastic", label: "Plastics" },
   ];
 
   const filteredProducts = products?.filter(product => 
