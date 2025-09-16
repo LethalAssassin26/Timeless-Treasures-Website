@@ -20,6 +20,7 @@ const Products = () => {
     { id: "wood", label: "Wood Products" },
     { id: "printed", label: "3D Printed" },
     { id: "plastic", label: "Plastics" },
+    { id: "beaded", label: "Beadable" },
   ];
 
   const filteredProducts = products?.filter(product => 
