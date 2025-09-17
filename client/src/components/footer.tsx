@@ -1,6 +1,6 @@
 import { Link } from "wouter";
 import { Cpu } from "lucide-react";
-import { FaLinkedin, FaTwitter, FaFacebook } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaGoogle } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -17,25 +17,25 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <a 
-                href="#" 
+                href="https://www.instagram.com/_timeless_treasures_1/" 
                 className="text-muted-foreground hover:text-primary transition-colors"
-                data-testid="link-linkedin"
+                data-testid="link-instagram"
               >
-                <FaLinkedin className="text-xl" />
+                <FaInstagram className="text-xl" />
               </a>
               <a 
-                href="#" 
-                className="text-muted-foreground hover:text-primary transition-colors"
-                data-testid="link-twitter"
-              >
-                <FaTwitter className="text-xl" />
-              </a>
-              <a 
-                href="#" 
+                href="https://www.facebook.com/profile.php?id=61576867763822" 
                 className="text-muted-foreground hover:text-primary transition-colors"
                 data-testid="link-facebook"
               >
                 <FaFacebook className="text-xl" />
+              </a>
+              <a 
+                href="mailto:tmlstrs23@gmail.com" 
+                className="text-muted-foreground hover:text-primary transition-colors"
+                data-testid="link-gmail"
+              >
+                <FaGoogle className="text-xl" />
               </a>
             </div>
           </div>
@@ -77,18 +77,11 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold text-foreground mb-4">Contact Info</h4>
             <ul className="space-y-2 text-muted-foreground" data-testid="text-contact-info">
-              <li>123 Tech Street, Suite 456</li>
-              <li>San Francisco, CA 94102</li>
-              <li>+1 (555) 123-4567</li>
-              <li>info@techflow-solutions.com</li>
+              <li>Instagram: _timeless_treasures_1</li>
+              <li>Facebook: Timeless Treasures</li>
+              <li>Gmail: tmlstrs@gmail.com</li>
             </ul>
           </div>
-        </div>
-        
-        <div className="border-t border-border mt-8 pt-8 text-center">
-          <p className="text-muted-foreground" data-testid="text-copyright">
-            &copy; 2024 TechFlow Solutions. All rights reserved.
-          </p>
         </div>
       </div>
     </footer>
