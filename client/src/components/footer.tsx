@@ -1,5 +1,5 @@
 import { Link } from "wouter";
-import { Cpu } from "lucide-react";
+import { BriefcaseBusiness } from "lucide-react";
 import { FaFacebook, FaInstagram, FaGoogle } from "react-icons/fa";
 
 const Footer = () => {
@@ -9,11 +9,11 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center mb-4">
-              <Cpu className="text-primary text-xl mr-2" />
-              <span className="text-xl font-bold text-foreground">TechFlow Solutions</span>
+              <BriefcaseBusiness className="text-primary text-xl mr-2" />
+              <span className="text-xl font-bold text-foreground">Timeless Treasures</span>
             </div>
             <p className="text-muted-foreground mb-4" data-testid="text-footer-description">
-              Empowering businesses with innovative technology solutions for a digital future.
+              Timeless Treasures - Crafting Memories with Every Piece.
             </p>
             <div className="flex space-x-4">
               <a 
@@ -75,7 +75,7 @@ const Footer = () => {
           </div>
           
           <div>
-            <h4 className="font-semibold text-foreground mb-4">Contact Info</h4>
+            <h4 className="font-semibold text-foreground mb-4">Social Media Info</h4>
             <ul className="space-y-2 text-muted-foreground" data-testid="text-contact-info">
               <li>Instagram: _timeless_treasures_1</li>
               <li>Facebook: Timeless Treasures</li>

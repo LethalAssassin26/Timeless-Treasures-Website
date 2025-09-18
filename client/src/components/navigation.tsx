@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Menu, Cpu } from "lucide-react";
+import { Menu, BriefcaseBusiness } from "lucide-react";
 
 const Navigation = () => {
   const [location] = useLocation();
@@ -26,7 +26,7 @@ const Navigation = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="flex-shrink-0 flex items-center" data-testid="link-logo">
-            <Cpu className="text-primary text-xl mr-2" />
+            <BriefcaseBusiness className="text-primary text-xl mr-2" />
             <span className="text-xl font-bold text-foreground">TechFlow Solutions</span>
           </Link>
 
