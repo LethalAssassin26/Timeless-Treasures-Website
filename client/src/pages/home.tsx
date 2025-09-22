@@ -32,10 +32,10 @@ const Home = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4" data-testid="text-why-choose-title">
-              Why Choose TechFlow Solutions?
+              Why Choose Timeless Treasures?
             </h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto" data-testid="text-why-choose-description">
-              We specialize in delivering comprehensive technology solutions that empower businesses to thrive in the digital age.
+              We sell handmade products crafted with care and passion, ensuring each item is unique and of the highest quality.
             </p>
           </div>
 

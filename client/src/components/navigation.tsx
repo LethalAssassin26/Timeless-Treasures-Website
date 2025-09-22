@@ -27,7 +27,7 @@ const Navigation = () => {
           {/* Logo */}
           <Link href="/" className="flex-shrink-0 flex items-center" data-testid="link-logo">
             <BriefcaseBusiness className="text-primary text-xl mr-2" />
-            <span className="text-xl font-bold text-foreground">TechFlow Solutions</span>
+            <span className="text-xl font-bold text-foreground">Timeless Treasures</span>
           </Link>
 
           {/* Desktop Navigation */}

@@ -33,7 +33,7 @@ const About = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4" data-testid="text-about-title">
-              About TechFlow Solutions
+              About Timeless Treasures
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto" data-testid="text-about-description">
               We're passionate about empowering businesses with innovative technology solutions that drive success and growth.
@@ -46,7 +46,7 @@ const About = () => {
                 Our Mission
               </h2>
               <p className="text-lg text-muted-foreground mb-6" data-testid="text-mission-paragraph1">
-                At TechFlow Solutions, we believe that the right technology can transform businesses and unlock their full potential. Our mission is to provide cutting-edge solutions that streamline operations, enhance productivity, and drive measurable results.
+                At Timeless Treasures, we believe that the right technology can transform businesses and unlock their full potential. Our mission is to provide cutting-edge solutions that streamline operations, enhance productivity, and drive measurable results.
               </p>
               <p className="text-lg text-muted-foreground mb-6" data-testid="text-mission-paragraph2">
                 Founded in 2018, we've helped over 500 businesses across various industries implement successful digital transformation strategies. Our team of expert consultants and engineers work closely with each client to understand their unique challenges and deliver tailored solutions.

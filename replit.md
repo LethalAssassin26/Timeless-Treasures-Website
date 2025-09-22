@@ -2,7 +2,7 @@
 
 ## Overview
 
-TechFlow Solutions is a modern full-stack web application built with React and Express that showcases technology products and services. The application serves as a business website featuring product catalogs, company information, and contact functionality. It implements a clean, professional design using shadcn/ui components and provides both desktop and mobile-responsive experiences.
+Timeless Treasures is a modern full-stack web application built with React and Express that showcases technology products and services. The application serves as a business website featuring product catalogs, company information, and contact functionality. It implements a clean, professional design using shadcn/ui components and provides both desktop and mobile-responsive experiences.
 
 ## User Preferences
 
