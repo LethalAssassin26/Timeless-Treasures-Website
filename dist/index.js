@@ -141,7 +141,6 @@ var contacts = pgTable("contacts", {
   firstName: text("first_name").notNull(),
   lastName: text("last_name").notNull(),
   email: text("email").notNull(),
-  company: text("company"),
   service: text("service"),
   message: text("message").notNull(),
   createdAt: text("created_at").notNull().default(sql`CURRENT_TIMESTAMP`)
