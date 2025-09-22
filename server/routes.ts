@@ -2,6 +2,7 @@ import type { Express } from "express";
 import { createServer, type Server } from "http";
 import { storage } from "./storage";
 import { insertContactSchema } from "@shared/schema";
+import  nodemailer  from "nodemailer";
 
 export async function registerRoutes(app: Express): Promise<Server> {
   // Get all products
@@ -39,17 +40,55 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
-  // Submit contact form
   app.post("/api/contact", async (req, res) => {
     try {
       const validatedData = insertContactSchema.parse(req.body);
-      const contact = await storage.createContact(validatedData);
-      res.status(201).json({ message: "Contact form submitted successfully", id: contact.id });
-    } catch (error) {
+
+      const contract = await storage.createContact(validatedData);
+
+      // Gmail transporter
+      const transporter = nodemailer.createTransport({
+        service: "gmail",
+        auth: {
+          user: process.env.EMAIL_USER,
+          pass: process.env.EMAIL_PASS,
+        },
+      });
+
+      await transporter.sendMail({
+        from: `"Website Contact" <${process.env.EMAIL_USER}>`,
+        to: process.env.EMAIL_USER, // Send to yourself
+        subject: "New Contact Form Submission",
+        text: `
+          New contact form submission:
+          Name: ${validatedData.name}
+          Email: ${validatedData.email}
+          Message: ${validatedData.message}
+        `,
+        html: `
+          <h2>New Contact Form Submission</h2>
+          <p><strong>Name:</strong> ${validatedData.name}</p>
+          <p><strong>Email:</strong> ${validatedData.email}</p>
+          <p><strong>Message:</strong></p>
+          <p>${validatedData.message}</p>
+        `,
+      });
+
+      res.status(200).json({
+        message: "Contact form submitted successfully",
+        id: contract.id,
+      });
+    } catch (error: any) {
       if (error instanceof Error && error.name === "ZodError") {
-        return res.status(400).json({ message: "Invalid form data", errors: error });
+        return res.status(400).json({
+          message: "Invalid form data",
+          errors: error,
+        });
       }
-      res.status(500).json({ message: "Failed to submit contact form" });
+      res.status(500).json({
+        message: "Failed to submit contact form",
+        errors: error,
+      });
     }
   });
 
