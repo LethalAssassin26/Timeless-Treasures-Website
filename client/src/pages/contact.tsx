@@ -33,7 +33,6 @@ const Contact = () => {
       firstName: "",
       lastName: "",
       email: "",
-      company: "",
       service: "",
       message: "",
     },
@@ -63,16 +62,6 @@ const Contact = () => {
   };
 
   const contactInfo = [
-    {
-      icon: <MapPin className="text-primary-foreground" />,
-      title: "Office Address",
-      content: ["123 Tech Street, Suite 456", "San Francisco, CA 94102", "United States"]
-    },
-    {
-      icon: <Phone className="text-primary-foreground" />,
-      title: "Phone",
-      content: ["+1 (555) 123-4567", "Mon-Fri, 9:00 AM - 6:00 PM PST"]
-    },
     {
       icon: <Mail className="text-primary-foreground" />,
       title: "Email",
