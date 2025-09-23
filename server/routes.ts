@@ -3,6 +3,9 @@ import { createServer, type Server } from "http";
 import { storage } from "./storage";
 import { insertContactSchema } from "@shared/schema";
 import  nodemailer  from "nodemailer";
+import dotenv from "dotenv";
+
+dotenv.config();
 
 export async function registerRoutes(app: Express): Promise<Server> {
   // Get all products
@@ -61,13 +64,13 @@ export async function registerRoutes(app: Express): Promise<Server> {
         subject: "New Contact Form Submission",
         text: `
           New contact form submission:
-          Name: ${validatedData.name}
+          Name: ${validatedData.firstName} ${validatedData.lastName}
           Email: ${validatedData.email}
           Message: ${validatedData.message}
         `,
         html: `
           <h2>New Contact Form Submission</h2>
-          <p><strong>Name:</strong> ${validatedData.name}</p>
+          <p><strong>Name:</strong> ${validatedData.firstName} ${validatedData.lastName}</p>
           <p><strong>Email:</strong> ${validatedData.email}</p>
           <p><strong>Message:</strong></p>
           <p>${validatedData.message}</p>
