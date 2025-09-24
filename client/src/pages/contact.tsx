@@ -141,20 +141,6 @@ const Contact = () => {
 
                     <FormField
                       control={form.control}
-                      name="company"
-                      render={({ field }) => (
-                        <FormItem>
-                          <FormLabel>Company (Optional)</FormLabel>
-                          <FormControl>
-                            <Input placeholder="Your Company Name" {...field} value={field.value || ""} data-testid="input-company" />
-                          </FormControl>
-                          <FormMessage />
-                        </FormItem>
-                      )}
-                    />
-
-                    <FormField
-                      control={form.control}
                       name="service"
                       render={({ field }) => (
                         <FormItem>
