@@ -130,7 +130,6 @@ export class MemStorage implements IStorage {
     const contact: Contact = { 
       ...insertContact, 
       id,
-      company: insertContact.company ?? null,
       service: insertContact.service ?? null,
       createdAt: new Date().toISOString(),
     };

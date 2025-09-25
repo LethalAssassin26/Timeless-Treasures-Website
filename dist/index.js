@@ -109,7 +109,6 @@ var MemStorage = class {
     const contact = {
       ...insertContact,
       id,
-      company: insertContact.company ?? null,
       service: insertContact.service ?? null,
       createdAt: (/* @__PURE__ */ new Date()).toISOString()
     };
