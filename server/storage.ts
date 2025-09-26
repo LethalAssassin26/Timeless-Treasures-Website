@@ -1,4 +1,5 @@
 import { type Product, type InsertProduct, type Contact, type InsertContact } from "@shared/schema";
+
 import { randomUUID } from "crypto";
 
 export interface IStorage {
@@ -130,6 +131,7 @@ export class MemStorage implements IStorage {
     const contact: Contact = { 
       ...insertContact, 
       id,
+      company: insertContact.company ?? null,
       service: insertContact.service ?? null,
       createdAt: new Date().toISOString(),
     };
