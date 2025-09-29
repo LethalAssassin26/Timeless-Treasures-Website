@@ -79,7 +79,7 @@ const Footer = () => {
             <ul className="space-y-2 text-muted-foreground" data-testid="text-contact-info">
               <li>Instagram: _timeless_treasures_1</li>
               <li>Facebook: Timeless Treasures</li>
-              <li>Gmail: tmlstrs@gmail.com</li>
+              <li>Gmail: tmlstrs23@gmail.com</li>
             </ul>
           </div>
         </div>
