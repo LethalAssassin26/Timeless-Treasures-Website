@@ -10,10 +10,10 @@ const HeroSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="text-center lg:text-left animate-fade-in">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground mb-6 leading-tight" data-testid="text-hero-title">
-              Innovative Tech Solutions for Your Business
+              Handmade Products Crafted with Care
             </h1>
             <p className="text-xl text-primary-foreground/90 mb-8 leading-relaxed" data-testid="text-hero-description">
-              Transform your operations with cutting-edge technology solutions designed to streamline processes, boost productivity, and drive growth.
+              Discover unique, high-quality items made with passion and attention to detail. Each piece tells a story and brings warmth to your home.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Button
