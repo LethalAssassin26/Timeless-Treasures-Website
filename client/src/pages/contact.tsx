@@ -70,7 +70,7 @@ const Contact = () => {
     {
       icon: <Clock className="text-primary-foreground" />,
       title: "Business Hours",
-      content: ["Monday - Friday: 9:00 AM - 6:00 PM", "Saturday: 10:00 AM - 4:00 PM", "Sunday: Closed"]
+      content: ["Monday - Friday: 9:00 AM - 6:00 PM", "Saturday - Sunday: 9:00 AM - 8:00 PM"]
     }
   ];
 
@@ -83,7 +83,7 @@ const Contact = () => {
               Get In Touch
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto" data-testid="text-contact-description">
-              Looking to customize one of oour products? Submit a form below or conect us through our Email or Social Media to 
+              Looking to customize one of oour products? Submit a form below or conect us through our Email or Social Media to place a custom order!
             </p>
           </div>
 
@@ -152,10 +152,10 @@ const Contact = () => {
                               </SelectTrigger>
                             </FormControl>
                             <SelectContent>
-                              <SelectItem value="consulting">IT Consulting</SelectItem>
-                              <SelectItem value="software">Software Solutions</SelectItem>
-                              <SelectItem value="hardware">Hardware Solutions</SelectItem>
-                              <SelectItem value="support">Support Services</SelectItem>
+                              <SelectItem value="wood">Wood Made Product</SelectItem>
+                              <SelectItem value="printed">3D Printed Product</SelectItem>
+                              <SelectItem value="beaded">Beadable Product (Wristlet, etc)</SelectItem>
+                              <SelectItem value="plastic">Plastic Products (Egg Cartons, etc)</SelectItem>
                             </SelectContent>
                           </Select>
                           <FormMessage />
@@ -245,32 +245,25 @@ const Contact = () => {
                   </h3>
                   <div className="flex space-x-4">
                     <a 
-                      href="#" 
-                      className="flex items-center justify-center w-12 h-12 bg-primary hover:bg-primary/90 rounded-full transition-colors duration-200"
-                      data-testid="link-social-linkedin"
+                      href="https://www.instagram.com/_timeless_treasures_1/" 
+                      className="text-muted-foreground hover:text-primary transition-colors"
+                      data-testid="link-instagram"
                     >
-                      <FaLinkedin className="text-primary-foreground" />
+                      <FaInstagram className="text-xl" />
                     </a>
                     <a 
-                      href="#" 
-                      className="flex items-center justify-center w-12 h-12 bg-primary hover:bg-primary/90 rounded-full transition-colors duration-200"
-                      data-testid="link-social-twitter"
+                      href="https://www.facebook.com/profile.php?id=61576867763822" 
+                      className="text-muted-foreground hover:text-primary transition-colors"
+                      data-testid="link-facebook"
                     >
-                      <FaTwitter className="text-primary-foreground" />
+                      <FaFacebook className="text-xl" />
                     </a>
                     <a 
-                      href="#" 
-                      className="flex items-center justify-center w-12 h-12 bg-primary hover:bg-primary/90 rounded-full transition-colors duration-200"
-                      data-testid="link-social-facebook"
+                      href="mailto:tmlstrs23@gmail.com" 
+                      className="text-muted-foreground hover:text-primary transition-colors"
+                      data-testid="link-gmail"
                     >
-                      <FaFacebook className="text-primary-foreground" />
-                    </a>
-                    <a 
-                      href="#" 
-                      className="flex items-center justify-center w-12 h-12 bg-primary hover:bg-primary/90 rounded-full transition-colors duration-200"
-                      data-testid="link-social-instagram"
-                    >
-                      <FaInstagram className="text-primary-foreground" />
+                      <FaGoogle className="text-xl" />
                     </a>
                   </div>
                 </CardContent>
