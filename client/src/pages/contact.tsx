@@ -83,7 +83,7 @@ const Contact = () => {
               Get In Touch
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto" data-testid="text-contact-description">
-              Ready to transform your business with innovative technology solutions? Let's discuss your needs and create a customized plan for success.
+              Looking to customize one of oour products? Submit a form below or conect us through our Email or Social Media to 
             </p>
           </div>
 
