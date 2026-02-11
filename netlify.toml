@@ -5,7 +5,7 @@
 
 [[redirects]]
     from = "/*"
-    to "/dist/index.js"
+    to = "/dist/index.js"
     status = 200
 
 [[[plugins]]]
