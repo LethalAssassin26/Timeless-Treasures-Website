@@ -4,7 +4,7 @@ import typography from "@tailwindcss/typography";
 /** @type {import('tailwindcss').Config} */
 export default {
   darkMode: ["class", ".dark"],
-  content: ["./client/index.html", "./client/src/**/*.{js,jsx,ts,tsx}"],
+  content: ["./index.html", "./client/**/*.{js,jsx,ts,tsx}"],
 
   theme: {
     extend: {
@@ -15,8 +15,8 @@ export default {
       },
 
       colors: {
-        background: "hsl(222 47% 8%)",        // deep black/blue
-        foreground: "hsl(210 40% 98%)",       // white text
+        background: "hsl(222 47% 8%)",
+        foreground: "hsl(210 40% 98%)",
 
         card: {
           DEFAULT: "hsl(222 47% 11%)",
@@ -27,11 +27,11 @@ export default {
           foreground: "hsl(210 40% 98%)",
         },
         primary: {
-          DEFAULT: "hsl(216, 59%, 39%)",        // bright blue
+          DEFAULT: "hsl(216, 59%, 39%)",
           foreground: "hsl(210 40% 98%)",
         },
         secondary: {
-          DEFAULT: "hsl(217 32% 17%)",        // dark blue/gray
+          DEFAULT: "hsl(217 32% 17%)",
           foreground: "hsl(210 40% 98%)",
         },
         muted: {
@@ -64,9 +64,9 @@ export default {
       },
 
       fontFamily: {
-        sans: ["var(--font-sans)"],
-        serif: ["var(--font-serif)"],
-        mono: ["var(--font-mono)"],
+        sans: ["Inter", "sans-serif"],
+        serif: ["Georgia", "serif"],
+        mono: ["Menlo", "monospace"],
       },
 
       keyframes: {
@@ -91,4 +91,6 @@ export default {
       },
     },
   },
+
+  plugins: [animate, typography],
 };
