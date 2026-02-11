@@ -12,52 +12,50 @@ export default {
       },
 
       colors: {
-        background: "hsl(222 47% 8%)",        // deep black/blue
-        foreground: "hsl(210 40% 98%)",       // white text
+        background: "hsl(222 47% 8%)",
+        foreground: "hsl(210 40% 98%)",
 
-        card: {
-          DEFAULT: "hsl(222 47% 11%)",
-          foreground: "hsl(210 40% 98%)",
-        },
-        popover: {
-          DEFAULT: "hsl(222 47% 11%)",
-          foreground: "hsl(210 40% 98%)",
-        },
         primary: {
-          DEFAULT: "hsl(217 91% 60%)",        // bright blue
-          foreground: "hsl(210 40% 98%)",
-        },
-        secondary: {
-          DEFAULT: "hsl(217 32% 17%)",        // dark blue/gray
-          foreground: "hsl(210 40% 98%)",
-        },
-        muted: {
-          DEFAULT: "hsl(217 32% 20%)",
-          foreground: "hsl(215 20% 70%)",
-        },
-        accent: {
           DEFAULT: "hsl(217 91% 60%)",
           foreground: "hsl(210 40% 98%)",
         },
-        destructive: {
-          DEFAULT: "hsl(0 72% 51%)",
+
+        secondary: {
+          DEFAULT: "hsl(217 32% 17%)",
           foreground: "hsl(210 40% 98%)",
+        },
+
+        muted: {
+          DEFAULT: "hsl(217 32% 20%)",
+          foreground: "hsl(215 20% 70%)",
         },
 
         border: "hsl(217 32% 20%)",
         input: "hsl(217 32% 20%)",
         ring: "hsl(217 91% 60%)",
 
-        sidebar: {
-          DEFAULT: "hsl(222 47% 10%)",
-          foreground: "hsl(210 40% 98%)",
-          primary: "hsl(217 91% 60%)",
-          "primary-foreground": "hsl(210 40% 98%)",
-          accent: "hsl(217 32% 17%)",
-          "accent-foreground": "hsl(210 40% 98%)",
-          border: "hsl(217 32% 20%)",
-          ring: "hsl(217 91% 60%)",
-        },
+        /* Gradient helper colors */
+        blueStart: "#2563eb",
+        blueMid: "#3b82f6",
+        blueEnd: "#60a5fa",
+      },
+
+      backgroundImage: {
+        /* Main hero gradient */
+        "gradient-blue":
+          "linear-gradient(135deg, #2563eb 0%, #3b82f6 50%, #60a5fa 100%)",
+
+        /* Dark subtle gradient for cards */
+        "gradient-dark":
+          "linear-gradient(180deg, rgba(59,130,246,0.15) 0%, rgba(0,0,0,0) 100%)",
+
+        /* Radial glow */
+        "gradient-radial-blue":
+          "radial-gradient(circle at center, rgba(59,130,246,0.35) 0%, rgba(0,0,0,0) 70%)",
+      },
+
+      boxShadow: {
+        "blue-glow": "0 0 40px rgba(59,130,246,0.35)",
       },
 
       fontFamily: {
@@ -67,14 +65,6 @@ export default {
       },
 
       keyframes: {
-        "accordion-down": {
-          from: { height: "0" },
-          to: { height: "var(--radix-accordion-content-height)" },
-        },
-        "accordion-up": {
-          from: { height: "var(--radix-accordion-content-height)" },
-          to: { height: "0" },
-        },
         "fade-in": {
           from: { opacity: "0", transform: "translateY(10px)" },
           to: { opacity: "1", transform: "translateY(0)" },
@@ -82,8 +72,6 @@ export default {
       },
 
       animation: {
-        "accordion-down": "accordion-down 0.2s ease-out",
-        "accordion-up": "accordion-up 0.2s ease-out",
         "fade-in": "fade-in 0.5s ease-out",
       },
     },
