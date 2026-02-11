@@ -8,5 +8,5 @@
     to = "/dist/index.js"
     status = 200
 
-[[[plugins]]]
+[[plugins]]
   package = "@netlify/plugin-emails"
