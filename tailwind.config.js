@@ -2,6 +2,7 @@
 export default {
   darkMode: ["class", ".dark"],
   content: ["./client/index.html", "./client/src/**/*.{js,jsx,ts,tsx}"],
+
   theme: {
     extend: {
       borderRadius: {
@@ -11,51 +12,51 @@ export default {
       },
 
       colors: {
-        background: "hsl(var(--background))",
-        foreground: "hsl(var(--foreground))",
+        background: "hsl(222 47% 8%)",        // deep black/blue
+        foreground: "hsl(210 40% 98%)",       // white text
 
         card: {
-          DEFAULT: "hsl(var(--card))",
-          foreground: "hsl(var(--card-foreground))",
+          DEFAULT: "hsl(222 47% 11%)",
+          foreground: "hsl(210 40% 98%)",
         },
         popover: {
-          DEFAULT: "hsl(var(--popover))",
-          foreground: "hsl(var(--popover-foreground))",
+          DEFAULT: "hsl(222 47% 11%)",
+          foreground: "hsl(210 40% 98%)",
         },
         primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
+          DEFAULT: "hsl(217 91% 60%)",        // bright blue
+          foreground: "hsl(210 40% 98%)",
         },
         secondary: {
-          DEFAULT: "hsl(var(--secondary))",
-          foreground: "hsl(var(--secondary-foreground))",
+          DEFAULT: "hsl(217 32% 17%)",        // dark blue/gray
+          foreground: "hsl(210 40% 98%)",
         },
         muted: {
-          DEFAULT: "hsl(var(--muted))",
-          foreground: "hsl(var(--muted-foreground))",
+          DEFAULT: "hsl(217 32% 20%)",
+          foreground: "hsl(215 20% 70%)",
         },
         accent: {
-          DEFAULT: "hsl(var(--accent))",
-          foreground: "hsl(var(--accent-foreground))",
+          DEFAULT: "hsl(217 91% 60%)",
+          foreground: "hsl(210 40% 98%)",
         },
         destructive: {
-          DEFAULT: "hsl(var(--destructive))",
-          foreground: "hsl(var(--destructive-foreground))",
+          DEFAULT: "hsl(0 72% 51%)",
+          foreground: "hsl(210 40% 98%)",
         },
 
-        border: "hsl(var(--border))",
-        input: "hsl(var(--input))",
-        ring: "hsl(var(--ring))",
+        border: "hsl(217 32% 20%)",
+        input: "hsl(217 32% 20%)",
+        ring: "hsl(217 91% 60%)",
 
         sidebar: {
-          DEFAULT: "hsl(var(--sidebar))",
-          foreground: "hsl(var(--sidebar-foreground))",
-          primary: "hsl(var(--sidebar-primary))",
-          "primary-foreground": "hsl(var(--sidebar-primary-foreground))",
-          accent: "hsl(var(--sidebar-accent))",
-          "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
-          border: "hsl(var(--sidebar-border))",
-          ring: "hsl(var(--sidebar-ring))",
+          DEFAULT: "hsl(222 47% 10%)",
+          foreground: "hsl(210 40% 98%)",
+          primary: "hsl(217 91% 60%)",
+          "primary-foreground": "hsl(210 40% 98%)",
+          accent: "hsl(217 32% 17%)",
+          "accent-foreground": "hsl(210 40% 98%)",
+          border: "hsl(217 32% 20%)",
+          ring: "hsl(217 91% 60%)",
         },
       },
 
@@ -67,30 +68,16 @@ export default {
 
       keyframes: {
         "accordion-down": {
-          from: {
-            height: "0",
-          },
-          to: {
-            height: "var(--radix-accordion-content-height)",
-          },
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
         },
         "accordion-up": {
-          from: {
-            height: "var(--radix-accordion-content-height)",
-          },
-          to: {
-            height: "0",
-          },
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
         },
         "fade-in": {
-          from: {
-            opacity: "0",
-            transform: "translateY(10px)",
-          },
-          to: {
-            opacity: "1",
-            transform: "translateY(0)",
-          },
+          from: { opacity: "0", transform: "translateY(10px)" },
+          to: { opacity: "1", transform: "translateY(0)" },
         },
       },
 
@@ -101,5 +88,6 @@ export default {
       },
     },
   },
+
   plugins: [require("tailwindcss-animate"), require("@tailwindcss/typography")],
 };
