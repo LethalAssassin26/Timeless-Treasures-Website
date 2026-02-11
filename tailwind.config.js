@@ -24,7 +24,7 @@ export default {
           foreground: "hsl(210 40% 98%)",
         },
         primary: {
-          DEFAULT: "hsl(217 91% 60%)",        // bright blue
+          DEFAULT: "hsl(216, 61%, 25%)",        // bright blue
           foreground: "hsl(210 40% 98%)",
         },
         secondary: {
@@ -36,7 +36,7 @@ export default {
           foreground: "hsl(215 20% 70%)",
         },
         accent: {
-          DEFAULT: "hsl(217 91% 60%)",
+          DEFAULT: "hsl(217, 37%, 24%)",
           foreground: "hsl(210 40% 98%)",
         },
         destructive: {
