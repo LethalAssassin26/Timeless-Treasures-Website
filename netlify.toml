@@ -1,0 +1,12 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+  base = "/"
+
+[[redirects]]
+    from = "/*"
+    to "/dist/index.js"
+    status = 200
+
+[[[plugins]]]
+  package = "@netlify/plugin-emails"
