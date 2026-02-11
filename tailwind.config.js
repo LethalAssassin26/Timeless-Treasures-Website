@@ -24,7 +24,7 @@ export default {
           foreground: "hsl(210 40% 98%)",
         },
         primary: {
-          DEFAULT: "hsl(216, 61%, 25%)",        // bright blue
+          DEFAULT: "hsl(216, 59%, 39%)",        // bright blue
           foreground: "hsl(210 40% 98%)",
         },
         secondary: {
@@ -46,17 +46,17 @@ export default {
 
         border: "hsl(217 32% 20%)",
         input: "hsl(217 32% 20%)",
-        ring: "hsl(217 91% 60%)",
+        ring: "hsl(216, 59%, 39%)",
 
         sidebar: {
           DEFAULT: "hsl(222 47% 10%)",
           foreground: "hsl(210 40% 98%)",
-          primary: "hsl(217 91% 60%)",
+          primary: "hsl(216, 59%, 39%)",
           "primary-foreground": "hsl(210 40% 98%)",
           accent: "hsl(217 32% 17%)",
           "accent-foreground": "hsl(210 40% 98%)",
           border: "hsl(217 32% 20%)",
-          ring: "hsl(217 91% 60%)",
+          ring: "hsl(216, 59%, 39%)",
         },
       },
 
