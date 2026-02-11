@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  darkMode: ["class"],
+  darkMode: ["class", ".dark"],
   content: ["./client/index.html", "./client/src/**/*.{js,jsx,ts,tsx}"],
 
   theme: {
@@ -12,52 +12,50 @@ export default {
       },
 
       colors: {
-        background: "hsl(var(--background))",
-        foreground: "hsl(var(--foreground))",
+        background: "hsl(222 47% 8%)",
+        foreground: "hsl(210 40% 98%)",
 
-        card: {
-          DEFAULT: "hsl(var(--card))",
-          foreground: "hsl(var(--card-foreground))",
-        },
-        popover: {
-          DEFAULT: "hsl(var(--popover))",
-          foreground: "hsl(var(--popover-foreground))",
-        },
         primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
+          DEFAULT: "hsl(217 91% 60%)",
+          foreground: "hsl(210 40% 98%)",
         },
+
         secondary: {
-          DEFAULT: "hsl(var(--secondary))",
-          foreground: "hsl(var(--secondary-foreground))",
+          DEFAULT: "hsl(217 32% 17%)",
+          foreground: "hsl(210 40% 98%)",
         },
+
         muted: {
-          DEFAULT: "hsl(var(--muted))",
-          foreground: "hsl(var(--muted-foreground))",
-        },
-        accent: {
-          DEFAULT: "hsl(var(--accent))",
-          foreground: "hsl(var(--accent-foreground))",
-        },
-        destructive: {
-          DEFAULT: "hsl(var(--destructive))",
-          foreground: "hsl(var(--destructive-foreground))",
+          DEFAULT: "hsl(217 32% 20%)",
+          foreground: "hsl(215 20% 70%)",
         },
 
-        border: "hsl(var(--border))",
-        input: "hsl(var(--input))",
-        ring: "hsl(var(--ring))",
+        border: "hsl(217 32% 20%)",
+        input: "hsl(217 32% 20%)",
+        ring: "hsl(217 91% 60%)",
 
-        sidebar: {
-          DEFAULT: "hsl(var(--sidebar))",
-          foreground: "hsl(var(--sidebar-foreground))",
-          primary: "hsl(var(--sidebar-primary))",
-          "primary-foreground": "hsl(var(--sidebar-primary-foreground))",
-          accent: "hsl(var(--sidebar-accent))",
-          "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
-          border: "hsl(var(--sidebar-border))",
-          ring: "hsl(var(--sidebar-ring))",
-        },
+        /* Gradient helper colors */
+        blueStart: "#2563eb",
+        blueMid: "#3b82f6",
+        blueEnd: "#60a5fa",
+      },
+
+      backgroundImage: {
+        /* Main hero gradient */
+        "gradient-blue":
+          "linear-gradient(135deg, #2563eb 0%, #3b82f6 50%, #60a5fa 100%)",
+
+        /* Dark subtle gradient for cards */
+        "gradient-dark":
+          "linear-gradient(180deg, rgba(59,130,246,0.15) 0%, rgba(0,0,0,0) 100%)",
+
+        /* Radial glow */
+        "gradient-radial-blue":
+          "radial-gradient(circle at center, rgba(59,130,246,0.35) 0%, rgba(0,0,0,0) 70%)",
+      },
+
+      boxShadow: {
+        "blue-glow": "0 0 40px rgba(59,130,246,0.35)",
       },
 
       fontFamily: {
@@ -66,42 +64,7 @@ export default {
         mono: ["var(--font-mono)"],
       },
 
-      boxShadow: {
-        xs: "var(--shadow-xs)",
-        sm: "var(--shadow-sm)",
-        DEFAULT: "var(--shadow)",
-        md: "var(--shadow-md)",
-        lg: "var(--shadow-lg)",
-        xl: "var(--shadow-xl)",
-        "2xl": "var(--shadow-2xl)",
-
-        /* blue glow utility */
-        "blue-glow": "0 0 40px hsl(var(--primary) / 0.35)",
-      },
-
-      backgroundImage: {
-        /* hero gradient */
-        "gradient-blue":
-          "linear-gradient(135deg, hsl(var(--primary)) 0%, #3b82f6 50%, #60a5fa 100%)",
-
-        /* subtle dark card gradient */
-        "gradient-dark":
-          "linear-gradient(180deg, hsl(var(--primary) / 0.18) 0%, transparent 100%)",
-
-        /* radial glow */
-        "gradient-radial-blue":
-          "radial-gradient(circle at center, hsl(var(--primary) / 0.35) 0%, transparent 70%)",
-      },
-
       keyframes: {
-        "accordion-down": {
-          from: { height: "0" },
-          to: { height: "var(--radix-accordion-content-height)" },
-        },
-        "accordion-up": {
-          from: { height: "var(--radix-accordion-content-height)" },
-          to: { height: "0" },
-        },
         "fade-in": {
           from: { opacity: "0", transform: "translateY(10px)" },
           to: { opacity: "1", transform: "translateY(0)" },
@@ -109,8 +72,6 @@ export default {
       },
 
       animation: {
-        "accordion-down": "accordion-down 0.2s ease-out",
-        "accordion-up": "accordion-up 0.2s ease-out",
         "fade-in": "fade-in 0.5s ease-out",
       },
     },
