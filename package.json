@@ -56,7 +56,6 @@
     "express-session": "^1.19.0",
     "framer-motion": "^12.34.0",
     "input-otp": "^1.4.2",
-    "lightingcss": "^0.1.0",
     "lightningcss": "^1.31.1",
     "lucide-react": "^0.563.0",
     "memorystore": "^1.6.7",
